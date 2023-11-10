@@ -1,12 +1,13 @@
 package com.Learning.Base;
 
 import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
 
-	public static WebDriver wd=null;
+	public static WebDriver wd = null;
 
 	private final Browsers DEFAULT_BROWSER = Browsers.CHROME;
 	private final String URL = "https://naveenautomationlabs.com/opencart/index.php?route=account/login";
