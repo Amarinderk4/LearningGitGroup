@@ -9,7 +9,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.Learning.Base.TestBase;
-import com.Naveenautomation.Pages.NewsletterPage;
 
 public class AccountPage extends TestBase {
 
@@ -39,11 +38,7 @@ public class AccountPage extends TestBase {
 	@FindBy(xpath = "//input[@value='Continue']")
 	WebElement accountNewsletterSubmitBtn;
 
-	
-	public NewsletterPage clickNewsletterPage() {
-		return new NewsletterPage();
 
-	}
 
 	public String getMyAccountText() {
 		return myAccountText.getText();
@@ -53,11 +48,6 @@ public class AccountPage extends TestBase {
 		return acccountInfoUpdateSuccessMessage.getText();
 	}
 
-	public NewsletterPage clickSubscribeBtn() {
-		//subscribePage.click();
-		return new NewsletterPage();
-
-	}
 
 	public String getNewsletterSubscSuccessMessage() {
 		return accountNewsletterSuccessMessage.getText();
