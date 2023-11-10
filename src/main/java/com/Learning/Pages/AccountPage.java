@@ -33,6 +33,7 @@ public class AccountPage extends TestBase {
 	@FindBy(xpath = "//input[@value='Continue']")
 	WebElement accountNewsletterSubmitBtn;
 
+
 	public String getMyAccountText() {
 		return myAccountText.getText();
 	}
@@ -40,6 +41,7 @@ public class AccountPage extends TestBase {
 	public String getSuccessMessage() {
 		return acccountInfoUpdateSuccessMessage.getText();
 	}
+
 
 	public String getNewsletterSubscSuccessMessage() {
 		return accountNewsletterSuccessMessage.getText();
