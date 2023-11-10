@@ -1,20 +1,15 @@
 package com.Learning.Pages;
 
-import java.util.List;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.Learning.Base.TestBase;
-import com.Naveenautomation.Pages.NewsletterPage;
 
 public class AccountPage extends TestBase {
 
 	public AccountPage() {
-	
+
 		PageFactory.initElements(wd, this);
 	}
 
@@ -32,18 +27,11 @@ public class AccountPage extends TestBase {
 	@FindBy(xpath = "//a[text()='Change your password']")
 	WebElement accountPassword;
 
-	
 	@FindBy(css = "div.alert-success ")
 	WebElement accountNewsletterSuccessMessage;
 
 	@FindBy(xpath = "//input[@value='Continue']")
 	WebElement accountNewsletterSubmitBtn;
-
-	
-	public NewsletterPage clickNewsletterPage() {
-		return new NewsletterPage();
-
-	}
 
 	public String getMyAccountText() {
 		return myAccountText.getText();
@@ -51,12 +39,6 @@ public class AccountPage extends TestBase {
 
 	public String getSuccessMessage() {
 		return acccountInfoUpdateSuccessMessage.getText();
-	}
-
-	public NewsletterPage clickSubscribeBtn() {
-		//subscribePage.click();
-		return new NewsletterPage();
-
 	}
 
 	public String getNewsletterSubscSuccessMessage() {

@@ -26,12 +26,18 @@ public class AccountTest extends TestBase {
 
 	}
 
+	
 	@Test
 	public void validateRecurringPayments() {
 		// accountPage = loginPage.SubmitLogin("amarinderk4@gmail.com", "shop1234");
 
 		Assert.assertEquals(accountPage.getMyAccountText(), "My Account", "User not return recurring payments");
 	}
+	@Test
+	public void DemoTest1() {
+		Assert.assertEquals(accountPage.getMyAccountText(), "My Account", "User not return recurring payments");
+	}
+
 
 	@AfterMethod
 	public void quitBrowser() {
